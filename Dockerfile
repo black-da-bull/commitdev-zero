@@ -32,7 +32,7 @@ RUN make build && \
   mv zero /usr/local/bin && \
   upx --lzma /usr/local/bin/zero
 
-FROM alpine:3.10
+FROM alpine:3.19.6
 ENV \
   PROTOBUF_VERSION=3.6.1-r1 \
   GOPATH=/proto-libs
